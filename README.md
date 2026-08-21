@@ -22,6 +22,15 @@ date**, not the upload date.
 
 Raw URL: `https://raw.githubusercontent.com/<owner>/fleetcore-assets/main/<path>`
 
+## One version per artefact
+
+When a new version supersedes an old one, **the old folder is removed in the same commit** that adds the
+new one. This is a deploy surface, not an archive: what is present is current, and what is current is
+what a live post points at.
+
+⚠️ Git history still holds the removed file. That is an audit trail, not a leak — everything here was
+public by design — but **it is not an unpublish.** Only push what is final.
+
 ## What may be pushed here
 
 Only an asset that has **already passed the promotion gate** and is cleared to appear publicly.
