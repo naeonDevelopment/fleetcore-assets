@@ -1,0 +1,5 @@
+# Working files never belong here. This repo is a publication surface.
+*.html
+src/
+.frames/
+.DS_Store
