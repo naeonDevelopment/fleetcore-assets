@@ -12,7 +12,8 @@ took its own copy. So an asset referenced by a live post is **permanent** — th
 |---|---|---|---|
 | `2026-08-20_one-record-two-deadlines_v1.0.0` | 1:1 carousel, sent 2026-08-21 07:28 | `6a87ef44dc319146a2753ee6` | Post deleted in LinkedIn by owner. **Asset retained** — deletion is not verifiable from the API |
 | `2026-08-20_one-record-two-deadlines_v1.1.0` | 4:5 carousel, sent 2026-08-21 07:56 | `6a88048b1b38003a90c65637` | Post deleted in LinkedIn by owner 2026-08-21. **Asset retained** |
-| `2026-08-20_one-record-two-deadlines_v2.1.0` | **16:9 landscape carousel**, sent 2026-08-21 18:05 | `6a889348dc319146a281a7ad` | ✅ **LIVE — do not remove** |
+| `2026-08-20_one-record-two-deadlines_v2.1.0` | 16:9, type undersized | `6a889348dc319146a281a7ad` | Post deleted by owner. **Asset retained** |
+| `2026-08-20_one-record-two-deadlines_v2.2.0` | **16:9, type calibrated to canvas**, sent 2026-08-21 19:11 | `6a88a2e13869cf665895a040` | ✅ **LIVE — do not remove** |
 
 ⚠️ **The publishing API cannot see a deletion made in the network's own UI.** A post may show `sent` here
 and no longer exist there. When in doubt, **keep the asset** — storage is free, a broken embed is not.
