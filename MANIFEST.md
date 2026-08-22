@@ -13,7 +13,7 @@ took its own copy. So an asset referenced by a live post is **permanent** — th
 | `2026-08-20_one-record-two-deadlines_v1.0.0` | 1:1 carousel, sent 2026-08-21 07:28 | `6a87ef44dc319146a2753ee6` | Post deleted in LinkedIn by owner. **Asset retained** — deletion is not verifiable from the API |
 | `2026-08-20_one-record-two-deadlines_v1.1.0` | 4:5 carousel, sent 2026-08-21 07:56 | `6a88048b1b38003a90c65637` | Post deleted in LinkedIn by owner 2026-08-21. **Asset retained** |
 | `2026-08-20_one-record-two-deadlines_v2.1.0` | 16:9, type undersized | `6a889348dc319146a281a7ad` | Post deleted by owner. **Asset retained** |
-| `2026-08-20_one-record-two-deadlines_v2.2.0` | **16:9, type calibrated to canvas**, sent 2026-08-21 19:11 | `6a88a2e13869cf665895a040` | ✅ **LIVE — do not remove** |
+| `2026-08-20_one-record-two-deadlines_v2.2.0` | 16:9, type below critical print size | `6a88a2e13869cf665895a040` | Post deleted by owner. **Asset retained** |
 
 ⚠️ **The publishing API cannot see a deletion made in the network's own UI.** A post may show `sent` here
 and no longer exist there. When in doubt, **keep the asset** — storage is free, a broken embed is not.
@@ -27,3 +27,10 @@ you will conclude a working fix has failed.
 1. Confirm no row above marks it LIVE.
 2. Confirm the referencing post is genuinely gone — check the network, not the API.
 3. Remove it, and update this table in the same commit.
+
+| `2026-08-20_one-record-two-deadlines_v3.0.0` | never published — CDN served stale bytes for the path | — | **Retained. Do not reuse this path** |
+| `2026-08-20_one-record-two-deadlines_v3.0.1` | **16:9, body 98px = 28.3px rendered**, sent 2026-08-22 16:17 | `6a89cb743869cf6658a7da26` | ✅ **LIVE — do not remove** |
+
+⚠️ **A path is immutable once pushed.** v3.0.0 was overwritten with corrected bytes; the repo updated but
+`raw.githubusercontent.com` kept serving the old file, and a cache-busting query did not defeat it.
+v3.0.1 exists because of that. **New bytes → new version → new path.**
