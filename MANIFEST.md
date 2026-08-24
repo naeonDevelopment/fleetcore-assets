@@ -34,3 +34,21 @@ you will conclude a working fix has failed.
 ⚠️ **A path is immutable once pushed.** v3.0.0 was overwritten with corrected bytes; the repo updated but
 `raw.githubusercontent.com` kept serving the old file, and a cache-busting query did not defeat it.
 v3.0.1 exists because of that. **New bytes → new version → new path.**
+
+## diagrams/2026-08-24_post-cards_v1.0.0
+
+Eight 1080×1350 information-carrying cards for the Aug–Sep plan. Rendered from
+`card.html` in the render pipeline: same band layout and same type floor as the
+decks (body ≥5% of canvas width). **Paths are immutable — a new card version
+gets a new folder, never an overwrite.**
+
+| File | Post | Referenced by |
+|---|---|---|
+| P02.png | psc-campaign-records | not yet posted — T2, awaiting confirmation |
+| P03.png | the-overdue-list-lies | Buffer `6a8c5fe666b8091b7519b0e3`, scheduled 2026-08-26 |
+| P04.png | one-engine-model-many-fleets | Buffer `6a8c5ff366b8091b7519b1f2`, scheduled 2026-08-27 |
+| P05.png | campaign-opens | not yet posted — T2 |
+| P06.png | absent-is-never-zero | not yet scheduled |
+| P07.png | it-cannot-write-to-your-records | not yet scheduled |
+| P09.png | it-does-not-need-five-years | not yet scheduled |
+| P10.png | what-we-withdrew | not yet posted — T2, article |
